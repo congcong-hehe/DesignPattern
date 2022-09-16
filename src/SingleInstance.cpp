@@ -3,8 +3,6 @@
 class Singleton
 {
 private:
-    static Singleton m_pInstance;
-
     Singleton() {};
 
     ~Singleton() {};
@@ -16,7 +14,7 @@ private:
 public:
     static Singleton& getInstance()
     {
-        static Singleton m_pInstance;
+        static Singleton m_pInstance;   //  第一次调用的时候初始化
         return m_pInstance;
     }
 };
