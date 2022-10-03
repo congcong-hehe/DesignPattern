@@ -2,7 +2,7 @@ add_rules("mode.debug", "mode.release")
 
 target("DesignPattern")
     set_kind("binary")
-    add_files("src/SingleInstance.cpp")
+    add_files("src/Factry.cpp")
 
 --
 -- If you want to known more usage about xmake, please see https://xmake.io
